@@ -14,7 +14,7 @@ def btn_click(item):
             result = str(eval(expr[:-1]))
             input_field.delete(0, tk.END)
             input_field.insert(tk.END, result)
-            expr = ""
+            expr = result
         if len(expr) > 16:
             expr = expr[:-1]
             input_field.delete(0, tk.END)
